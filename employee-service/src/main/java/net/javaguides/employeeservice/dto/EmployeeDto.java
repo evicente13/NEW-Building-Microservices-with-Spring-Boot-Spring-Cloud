@@ -19,4 +19,17 @@ public class EmployeeDto {
     private String lastName;
     @NotEmpty(message = "Employee email should not be null or empty")
     private String email;
+    @NotEmpty(message = "Employee Departament Code should not be null or empty")
+    private String departamentCode;
+
+    @Override
+    public String toString() {
+        return "EmployeeDto{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", departamentCode='" + departamentCode + '\'' +
+                '}';
+    }
 }

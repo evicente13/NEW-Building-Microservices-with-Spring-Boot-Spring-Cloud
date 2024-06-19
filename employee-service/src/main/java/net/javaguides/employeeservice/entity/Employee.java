@@ -22,5 +22,18 @@ public class Employee {
     private String lastName;
     @Column(name = "email", nullable = false, unique = true)
     private String email;
+    @Column(name = "departament_code", nullable = false)
+    private String departamentCode;
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", departamentCode='" + departamentCode + '\'' +
+                '}';
+    }
 }
 
