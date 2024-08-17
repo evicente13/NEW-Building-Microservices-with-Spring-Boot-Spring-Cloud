@@ -24,16 +24,7 @@ public class Employee {
     private String email;
     @Column(name = "departament_code", nullable = false)
     private String departamentCode;
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
-                ", departamentCode='" + departamentCode + '\'' +
-                '}';
-    }
+    @Column(name = "organization_code", nullable = false)
+    private String organizationCode;
 }
 
